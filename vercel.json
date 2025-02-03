@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "manage.py",
+            "src": "start.bat",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/$1"
+            "dest": "start.bat",
         }
     ]
 }
